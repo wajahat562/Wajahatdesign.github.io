@@ -1,0 +1,43 @@
+/* Basic Reset and Setup */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* Light background */
+    color: #333;
+}
+
+/* Container Styling */
+.greeting-container {
+    padding: 20px;
+}
+
+/* Greeting Text Styling and Animation */
+#greeting-text {
+    font-size: 4em;
+    color: #ff6347; /* Tomato Red */
+    /* Link the fade-in-out animation */
+    animation: fadeInOut 3s infinite alternate; 
+}
+
+/* Keyframes for the animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.9); /* Slightly smaller at the start */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
